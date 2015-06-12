@@ -11,17 +11,17 @@
 
     	$routeProvider.
 	    	 when('/', {
-	    	   templateUrl: 'templates/home/home.html',
+	    	   templateUrl: 'templates/main/home/home.html',
 	    	   controller:	'HomeController',
 	           controllerAs: 'home'
 	       	 }).
 	       	when('/about', {
-		    	   templateUrl: 'templates/about/about.html',
+		    	   templateUrl: 'templates/main/about/about.html',
 		    	   controller:	'AboutController',
 		           controllerAs: 'about'
 		       	 }).
 	       	when('/contact', {
-		    	   templateUrl: 'templates/contact/contact.html',
+		    	   templateUrl: 'templates/main/contact/contact.html',
 		    	   controller:	'ContactController',
 		           controllerAs: 'contact'
 		       	 }).

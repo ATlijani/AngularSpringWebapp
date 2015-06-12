@@ -6,7 +6,7 @@
 
 				var vm = this;
 
-				vm.viewLocation = 'webapp/templates/contact/contact.html'
+				vm.viewLocation = 'webapp/templates/main/contact/contact.html'
 
 				return vm;
 

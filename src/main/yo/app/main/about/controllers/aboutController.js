@@ -9,7 +9,7 @@
 				vm.user={};
 				vm.user.name='toto';
 
-				vm.viewLocation = 'webapp/templates/about/about.html';
+				vm.viewLocation = 'webapp/templates/main/about/about.html';
 
 				return vm;
 

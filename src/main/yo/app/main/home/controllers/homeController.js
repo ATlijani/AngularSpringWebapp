@@ -6,7 +6,7 @@
 
 				var vm = this;
 
-				vm.viewLocation = 'webapp/templates/home/home.html';
+				vm.viewLocation = 'webapp/templates/main/home/home.html';
 
 				return vm;
 			} ]);

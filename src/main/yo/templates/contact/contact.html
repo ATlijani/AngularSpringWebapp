@@ -1,10 +1,42 @@
 <div class="container">
-  <div class="col-md-12">
-
-    <div class="page-header">
-      <h1>Contact</h1>
-    </div>
-
-  </div>
-
+	<div class="col-md-12">
+		<div class="page-header">
+			<h1>Contact</h1>
+		</div>
+		<div ng-controller="signupController as signupCtrl">
+			<form name="signupCtrl.signup_form" novalidate>
+				<table border="0">
+					<tr>
+						<td>Enter first name:</td>
+						<td><input name="firstname" type="text" ng-model="signupCtrl.firstName" required> <span style="color: red"
+							ng-show="signup_form.firstname.$dirty && signup_form.firstname.$invalid"> <span ng-show="signup_form.firstname.$error.required">First Name
+									is required.</span>
+						</span></td>
+					</tr>
+					<tr>
+						<td>Enter last name:</td>
+						<td><input name="lastname" type="text" ng-model="signupCtrl.lastName" required> <span style="color: red"
+							ng-show="signup_form.lastname.$dirty && signup_form.lastname.$invalid"> <span ng-show="signup_form.lastname.$error.required">Last Name is
+									required.</span>
+						</span></td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><input name="email" type="email" ng-model="signupCtrl.email" length="100" required> <span style="color: red"
+							ng-show="signup_form.email.$dirty && signup_form.email.$invalid"> <span ng-show="signup_form.email.$error.required">Email is required.</span> <span
+								ng-show="signup_form.email.$error.email">Invalid email address.</span>
+						</span></td>
+					</tr>
+					<tr>
+						<td><button ng-click="signupCtrl.reset()">Reset</button></td>
+						<td><button
+								ng-disabled="signup_form.firstname.$dirty && signup_form.firstname.$invalid ||
+			  signup_form.lastname.$dirty && signup_form.lastname.$invalid ||
+			  signup_form.email.$dirty && signup_form.email.$invalid"
+								ng-click="signupCtrl.submit()">Submit</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
 </div>

@@ -7,7 +7,7 @@
 				$interpolateProvider.endSymbol('}');
 			} ]);
 
-	angular.module('app', [ 'ExprParser', 'ngAnimate', 'ngRoute', 'ngSanitize',
+	angular.module('app', [ 'ExprParser', 'ngMessages', 'ngAnimate', 'ngRoute', 'ngSanitize',
 			'mgcrea.ngStrap' ]);
 
 	angular.module('app').controller('ApplicationController', ['$window','ConfService',function($window,ConfService){

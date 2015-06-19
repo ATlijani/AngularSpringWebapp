@@ -49,12 +49,6 @@ module.exports = function(grunt) {
         src: ['**/**/*'],
         dest: '<%= folders.webapp.build %>resources/'
       },
-      config: {
-        expand: true,
-        cwd: '<%= folders.webapp.root %>config/',
-        src: ['**/**/*'],
-        dest: '<%= folders.webapp.build %>config/'
-      },
       img: {
         expand: true,
         cwd: '<%= folders.webapp.root %>img/',
@@ -118,10 +112,6 @@ module.exports = function(grunt) {
 	  resources: {
 		files: ['<%= folders.webapp.root %>resources/*'],
 	    tasks: [ 'copy:resources' ]
-	  },
-	  config: {
-		files: ['<%= folders.webapp.root %>config/*'],
-		tasks: [ 'copy:config' ]
 	  },
 	  img: {
 		files: ['<%= folders.webapp.root %>img/*'],
